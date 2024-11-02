@@ -21,7 +21,7 @@ use Symfony\WebpackEncoreBundle\Dto\AbstractStimulusDto;
  */
 final class ComponentAttributes implements \Stringable, \IteratorAggregate, \Countable
 {
-    private const NESTED_REGEX = '#^([\w-]+):(.+)$#';
+    private const NESTED_REGEX = '#^([\w-]+):(.+)(?<!!)$#';
 
     /** @var array<string,true> */
     private array $rendered = [];
